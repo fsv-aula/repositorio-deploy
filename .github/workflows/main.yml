@@ -1,8 +1,7 @@
 name: Deploy no Kubernetes
 on: 
     repository_dispatch:
-      types:
-        - remote-deploy
+      types: [remote-deploy]
     workflow_call: 
         inputs:
             manifests:
